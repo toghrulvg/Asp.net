@@ -1,0 +1,24 @@
+﻿@{ 
+    string[] headers = { "Eshghing", "Thoghrul", "Messi" };
+    string[] bodyes = { "Jhafarlhi", "Qhuluzhadheh", "Afdandilov" };
+}
+<table><tr>
+    @foreach (var item in headers)
+    {
+        <th style="color:blue;text-align:center;border:dotted">@item</th>
+    }
+</tr>
+<tr>
+    @foreach (var itemm in bodyes)
+    {
+
+        <td style="color:hotpink;text-align:center;border:dotted">@itemm</td>
+
+    }
+</tr>
+
+</table>
+
+<a asp-controller="Home"
+   asp-action="Index1">All Speakers</a>
+
